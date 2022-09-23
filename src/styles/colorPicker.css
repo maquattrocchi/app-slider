@@ -1,0 +1,16 @@
+.color-input{
+    border: 3px solid #C8C1BA;
+    width: 50px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.chrome-picker{
+    position: absolute;
+    left: -80px;
+    top: 30px;
+    z-index: 1000;
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.29);
+}

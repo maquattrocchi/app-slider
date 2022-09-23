@@ -1,0 +1,81 @@
+.mySwiper{
+  height: 500px;
+  position: unset;
+  padding: 1.5rem;
+}
+/* Card Style */
+.card-container img{
+  width: 100px;
+  height: 100px;
+}
+.card-container .btn{
+  padding: 0.3rem 0.7rem;
+  border: 3px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+.card-container .btn:hover{
+  transform: scale(1.1);
+}
+.swiper-slide:not(.swiper-slide-next):not(.swiper-slide-prev):not(.swiper-slide-active){
+  opacity: 0.3;
+}
+/* Slider Arrow */
+.swiper-button-prev, .swiper-button-next{
+  position: absolute;
+  top: 50%;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}  
+.swiper-button-prev{
+  left: 10%;
+}
+.swiper-button-next{
+  right: 10%;
+}
+.swiper-button-next:after{
+  content: "\2192";
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.swiper-button-prev::after{
+  content: "\2190";
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  transform: scale(1.23);
+} 
+/* Slider pagination circle */
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: -15px;
+}
+.swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+  background-color: #c3bbb4;
+  border: 2px solid #c3bbb4;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.swiper-pagination-bullet:hover{
+    background-color: black;
+}
+.swiper-pagination-bullet-active{
+    background-color: black;
+    border-color: black
+}
+
+@media  screen and (max-width: 481px) {
+  .swiper{
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1280px){
+  .swiper-slide:not(.swiper-slide-next):not(.swiper-slide-prev):not(.swiper-slide-active){
+    opacity: 1;
+  }
+  .swiper-slide-prev, .swiper-slide-next{
+    opacity: 0.3;
+  }
+}
